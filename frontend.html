@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RBR IoT Solutions</title>
+    <style>
+    svg{
+        border:1px solid #ccc;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div class="container-fluid main-body">
+        <div class="row main-row">                 
+            <div id="chart">
+                <header class="col-xl-12"><h2 class="tm-text-shadow">The DATA!!!!</h2></header> 
+                <svg class="line-chart"></svg>
+                <div>
+                    Initial Potential: <input type="text" name="init_voltage"><br>
+                    Upper Potential: <input type="text" name="up_voltage"><br>
+                    Lower Potential: <input type="text" name="lo_voltage"><br>
+                    Sample Rate: <input type="text" name="s_rate"><br>
+                    No. Scans: <input type="text" name="scans"><br>
+                    <button id="apply">Run w/ Settings</button>
+                </div>
+                <p id="response"></p>
+            </div>
+        </div>
+        <script src="d3.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="frontend.js"></script>
+    </body>
+</html>
