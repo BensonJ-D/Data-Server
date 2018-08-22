@@ -13,7 +13,7 @@ var http = require('http');
 var fs = require('fs');
 const util = require('util');
 const spawn = require('child_process').spawn;
-const python = spawn('python', ['random_data.py']);
+const python = spawn('py', ['random_data.py']);
  
 var inputFile='./MOCK_DATA.csv';
 var data_raw = fs.readFileSync(inputFile).toString();

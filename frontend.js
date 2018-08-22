@@ -64,7 +64,7 @@ $(function () {
         }
     };
 
-    #settings.onsubmit = () => { console.log(#settings.element[0].value); }
+    $("#submit").click(() => { console.log("Int. Volt: " + $("#settings input[name=init_voltage]").val()); });
 
     /**
      * This method is optional. If the server wasn't able to respond to the

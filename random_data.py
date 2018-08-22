@@ -10,13 +10,13 @@ def plot():
 	for x in range(20):
 		newint = theint + random.randint(-5, 5)
 		theint = clamp(newint, 0, 100)
-		print str(i)+","+str(theint)
+		print (str(i)+","+str(theint))
 		i = i + 1
 		sys.stdout.flush()
 	for x in range(20):
 		newint = theint + random.randint(-5, 5)
 		theint = clamp(newint, 0, 100)
-		print str(i)+","+str(theint)
+		print (str(i)+","+str(theint))
 		i = i - 1
 		sys.stdout.flush()
 
